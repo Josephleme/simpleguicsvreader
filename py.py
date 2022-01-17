@@ -1,9 +1,9 @@
 FILE_NAME = 'table.csv'
 def getDataList(FILE_NAME):
-    dataFile = open(FILE_NAME, "r")
-    data_list = []
-    for line in dataFile:
-        data_list.append(line.strip().split(','))
+    with open(FILE_NAME, "r") as dataFile:
+        data_list = []
+        for line in dataFile:
+            data_list.append(line.strip().split(','))
     return data_list
 
 data_list=getDataList(FILE_NAME)
