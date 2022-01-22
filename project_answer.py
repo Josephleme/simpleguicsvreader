@@ -52,7 +52,7 @@ def get_monthly_averages(data_list):
             x=round(avg,2)
             my_tuple = (x,m_y)
             monthly_average_list.append(my_tuple)
-            print(x)
+            
     return monthly_average_list
 monthlyAverageList = get_monthly_averages(data_list)
 def printInfo(monthlyAverageList):
